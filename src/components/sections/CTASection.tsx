@@ -10,7 +10,8 @@ const CTASection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.65, ease: 'easeInOut' }}
-        className="overflow-hidden rounded-[2.5rem] bg-[linear-gradient(135deg,#F7E7E6_0%,#F3D9C9_100%)] px-6 py-14 text-center shadow-[0_28px_80px_rgba(162,103,105,0.16)] sm:px-10 md:px-14 md:py-20"
+        className="overflow-hidden rounded-[2.5rem] px-6 py-14 text-center shadow-[0_28px_80px_rgba(123,45,78,0.12)] sm:px-10 md:px-14 md:py-20"
+        style={{ background: 'linear-gradient(135deg, var(--color-pale) 0%, var(--color-soft) 100%)' }}
       >
         <p className="text-xs uppercase tracking-[0.34em] text-mauve/80">Reserva tu fecha</p>
         <h2 className="mx-auto mt-5 max-w-4xl font-heading text-4xl leading-tight text-dark sm:text-5xl md:text-6xl">

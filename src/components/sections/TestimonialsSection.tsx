@@ -39,8 +39,8 @@ const TestimonialsSection = () => {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.55, delay: index * 0.1, ease: 'easeInOut' }}
         >
-          <Card className="h-full border-white/70 bg-white p-8 shadow-[0_20px_50px_rgba(43,43,43,0.08)]">
-            <p className="font-heading text-5xl leading-none text-gold">“</p>
+          <Card className="h-full border-champagne/60 bg-blush/95 p-8 shadow-[0_20px_50px_rgba(123,45,78,0.06)]">
+            <p className="font-heading text-5xl leading-none text-dark">“</p>
             <p className="mt-4 text-base leading-8 text-dark/75">{testimonial.quote}</p>
             <div className="mt-8 border-t border-dark/8 pt-6">
               <p className="font-heading text-2xl text-dark">{testimonial.author}</p>

@@ -58,8 +58,8 @@ const Navbar = () => {
         <a href="#inicio" className="flex min-w-0 items-center gap-3">
           <img src="/placeholder/logo-mark.svg" alt="Andrea Parra" className="h-10 w-10 shrink-0 rounded-full object-cover sm:h-11 sm:w-11" />
           <div className="min-w-0">
-            <p className="truncate font-heading text-lg text-dark sm:text-xl">Andrea Parra</p>
-            <p className="hidden text-[0.65rem] uppercase tracking-[0.3em] text-dark/55 sm:block"> Event Planner</p>
+            <p className={cn('truncate font-heading text-lg sm:text-xl', isScrolled ? 'text-dark' : 'text-white')}>Andrea Parra</p>
+            <p className={cn('hidden text-[0.65rem] uppercase tracking-[0.3em] sm:block', isScrolled ? 'text-dark/55' : 'text-white/75')}> Event Planner</p>
           </div>
         </a>
 
@@ -68,7 +68,10 @@ const Navbar = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm uppercase tracking-[0.28em] text-dark/70 transition-colors duration-300 hover:text-mauve"
+              className={cn(
+                'text-sm uppercase tracking-[0.28em] transition-colors duration-300',
+                isScrolled ? 'text-dark/70 hover:text-mauve' : 'text-white/90 hover:text-white/70'
+              )}
             >
               {item.label}
             </a>
@@ -82,7 +85,10 @@ const Navbar = () => {
         <button
           type="button"
           aria-label={isOpen ? 'Cerrar menu' : 'Abrir menu'}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-dark/10 bg-white/70 text-dark shadow-sm backdrop-blur md:hidden"
+          className={cn(
+            'inline-flex h-12 w-12 items-center justify-center rounded-full border shadow-sm backdrop-blur md:hidden',
+            isScrolled ? 'border-dark/10 bg-white/70 text-dark' : 'border-white/30 bg-transparent text-white'
+          )}
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? <X size={18} /> : <Menu size={18} />}

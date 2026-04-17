@@ -8,11 +8,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-dark text-white shadow-[0_14px_40px_rgba(43,43,43,0.16)] hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(162,103,105,0.25)]',
+          'bg-dark text-blush shadow-[0_14px_40px_rgba(123,45,78,0.14)] hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(123,45,78,0.22)]',
         secondary:
-          'border border-white/60 bg-white/10 text-white backdrop-blur-sm hover:-translate-y-1 hover:bg-white/20',
+          'border border-champagne/40 bg-blush/6 text-dark backdrop-blur-sm hover:-translate-y-1 hover:bg-blush/12',
         accent:
-          'bg-gold text-dark shadow-[0_14px_35px_rgba(198,167,105,0.28)] hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(198,167,105,0.35)]',
+          'bg-mauve text-dark shadow-[0_14px_35px_rgba(242,166,192,0.18)] hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(242,166,192,0.28)]',
       },
       size: {
         default: 'h-12 px-7',
