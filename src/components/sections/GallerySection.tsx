@@ -2,11 +2,31 @@ import { motion } from 'framer-motion';
 import SectionContainer from '../ui/section-container';
 
 const galleryItems = [
-  { src: '/placeholder/gallery-art-1.svg', alt: 'Mesa decorada para boda elegante', className: 'md:col-span-2 md:row-span-2' },
-  { src: '/placeholder/gallery-art-2.svg', alt: 'Detalle floral para evento premium', className: 'md:col-span-1 md:row-span-1' },
-  { src: '/placeholder/hero-art.svg', alt: 'Espacio ambientado con luces suaves', className: 'md:col-span-1 md:row-span-2' },
-  { src: '/placeholder/gallery-art-2.svg', alt: 'Montaje de vajilla y cristaleria', className: 'md:col-span-2 md:row-span-1' },
-  { src: '/placeholder/gallery-art-1.svg', alt: 'Celebracion privada con mesa larga', className: 'md:col-span-1 md:row-span-1' },
+  {
+    src: '/imagenes/medium-vecteezy_tropical-flower-centerpiece-on-a-white-tablecloth-in-a_48657018_medium.jpg',
+    alt: 'Centro de mesa floral con composición tropical y acabado refinado',
+    className: 'md:col-span-2 md:row-span-2',
+  },
+  {
+    src: '/imagenes/medium-vecteezy_ai-generated-birthday-party-decoration-on-the-table_36799969_medium.jpg',
+    alt: 'Decoración de mesa con capas suaves, velas y detalles premium',
+    className: 'md:col-span-1 md:row-span-1',
+  },
+  {
+    src: '/imagenes/medium-vecteezy_bride-and-groom-have-romance-time-and-happy-together_3485241_medium.jpg',
+    alt: 'Escena romántica capturada con una dirección visual cálida y natural',
+    className: 'md:col-span-1 md:row-span-2',
+  },
+  {
+    src: '/imagenes/medium-vecteezy_almond-cookies-sweet-cakes-for-a-wedding-banquet-a_40967962_medium.jpg',
+    alt: 'Mesa dulce de boda con pastelería delicada y presentación curada',
+    className: 'md:col-span-2 md:row-span-1',
+  },
+  {
+    src: '/imagenes/medium-vecteezy_festive-birthday-party-decorations-on-table-with-cake_31350613_medium.jpg',
+    alt: 'Montaje festivo con pastel protagonista y acentos luminosos',
+    className: 'md:col-span-1 md:row-span-1',
+  },
 ];
 
 const GallerySection = () => {

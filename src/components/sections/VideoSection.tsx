@@ -16,7 +16,16 @@ const VideoSection = () => {
         transition={{ duration: 0.65, ease: 'easeInOut' }}
         className="relative overflow-hidden rounded-[2.5rem]"
       >
-        <img src="/placeholder/video-thumb-art.svg" alt="Vista previa del video del evento" className="h-[420px] w-full object-cover md:h-[560px]" />
+        <video
+          className="h-[420px] w-full object-cover md:h-[560px]"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-label="Video de ceremonia de boda al atardecer"
+        >
+          <source src="/videos/vecteezy_a-wedding-ceremony-in-the-mountains-at-sunset_52264129.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,43,43,0.08)_0%,rgba(43,43,43,0.62)_100%)]" />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-6 text-center text-white">
           <button
