@@ -1,21 +1,17 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/button';
+import DeferredVideo from '../ui/deferred-video';
 
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen overflow-hidden px-5 pb-16 pt-28 sm:px-8 sm:pt-32 lg:px-12 lg:pt-8">
-      <div className="absolute inset-0">
-        <video
-          aria-hidden="true"
-          playsInline
-          muted
-          loop
-          autoPlay
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.14),transparent_30%),linear-gradient(180deg,rgba(70,25,45,0.85)_0%,rgba(55,20,35,0.92)_100%)]">
+        <DeferredVideo
+          src="/videos/vecteezy_woman-decorates-an-arch-with-real-branches-and-lemons-for-an_13289015.mp4"
+          loadStrategy="idle"
           className="h-full w-full object-cover object-center"
-        >
-          <source src="/videos/vecteezy_woman-decorates-an-arch-with-real-branches-and-lemons-for-an_13289015.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Layered overlays: soft dark gradient + maroon tint to keep brand tone and ensure contrast */}
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.28)_0%,rgba(123,45,78,0.16)_40%,rgba(10,10,10,0.52)_100%)]" />
         {/* Soft pale fade at bottom to blend into page using #F8E9F3 */}

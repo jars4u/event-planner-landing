@@ -1,6 +1,7 @@
 import { Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SectionContainer from '../ui/section-container';
+import DeferredVideo from '../ui/deferred-video';
 
 const VideoSection = () => {
   return (
@@ -14,18 +15,13 @@ const VideoSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.65, ease: 'easeInOut' }}
-        className="relative overflow-hidden rounded-[2.5rem]"
+        className="relative overflow-hidden rounded-[2.5rem] bg-[linear-gradient(135deg,rgba(123,45,78,0.82)_0%,rgba(43,43,43,0.94)_100%)]"
       >
-        <video
+        <DeferredVideo
+          src="/videos/vecteezy_a-wedding-ceremony-in-the-mountains-at-sunset_52264129.mp4"
+          loadStrategy="visible"
           className="h-[420px] w-full object-cover md:h-[560px]"
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-label="Video de ceremonia de boda al atardecer"
-        >
-          <source src="/videos/vecteezy_a-wedding-ceremony-in-the-mountains-at-sunset_52264129.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(43,43,43,0.08)_0%,rgba(43,43,43,0.62)_100%)]" />
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-6 text-center text-white">
           <button
